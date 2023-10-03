@@ -1,16 +1,31 @@
 body {
-    background-color: #f3f9d2; 
-    text-align: center;
+    background-color: black; 
 }
  
 nav {
     display: flex;
+    justify-content: center;
     background-color: #2f2f2f;
     padding: 5px;
 }
 
+h1 {
+    font-size: 2em;
+    text-align: center;
+    width: 50%;
+    display: block;
+    margin: 10 auto;
+}
+
 img {
-    background-color: #2f2f2f;
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+a:hover {
+    background-color: darkslategrey;
+    color: white;
 }
 
 a {
@@ -22,13 +37,31 @@ a {
     margin: 5px;
     color: #2f2f2f;
     text-align: center;
-
 }
 
 .background {
-    background-color: #92b4a7;
+    background-color: grey;
+    text-align: center;
+}
+
+p {
+    width: 40%;
+    margin: 10px auto;
+    padding:10px;
 }
 
 #primary {
-    background-color: #92b4a7;
+    background-color: grey;
+}
+
+footer {
+    background-color: grey;
+    color: white;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+footer p {
+    text-align: center;
 }
