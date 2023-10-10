@@ -11,6 +11,8 @@ body {
 header {
     text-align: center;
     color: white;
+    display: block;
+    margin: 0 auto;
 }
 
 header:hover {

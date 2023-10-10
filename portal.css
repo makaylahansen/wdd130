@@ -12,9 +12,12 @@ nav {
 h1 {
     font-size: 2em;
     text-align: center;
+    color: white;
     width: 50%;
     display: block;
-    margin: 10 auto;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 img {
