@@ -29,6 +29,8 @@ body {
 
 #logo_link {
     padding-top: 5px;
+    justify-self: center;
+    align-self: center;
 }
 
 .icon {
@@ -37,7 +39,14 @@ body {
 }
 
 header {
-    background-color: #646F4B
+    background-color: #646F4B;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
 }
 
 .home-title {
@@ -85,8 +94,18 @@ nav a {
     border-radius: 5px;
 }
 
-#hero-msg h1 {
+#hero {
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+}
+
+#hero-msg h1 {
     font-size: 2em;
 }
 
@@ -97,7 +116,6 @@ nav a {
 }
 
 #hero-msg {
-    background-color: #839D9A;
     color: white;
 }
 
@@ -148,4 +166,10 @@ footer .social img {
 
 footer p a:hover {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 700px) {
+    main {
+        display: block;
+    }
 }
