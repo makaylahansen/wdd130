@@ -1,19 +1,15 @@
-body {
-    text-align: center;
+h1 {
+    display: grid;
+    grid-template-columns: 150px 150px;
 }
 
-.header {
-    margin: 0;
+img {
+    width: 150px;
 }
 
 div {
-    background-color: grey;
-    width: 85%;
-    height: 20%;
-}
-
-nav {
-    display: block;
-    margin: 0 auto;
-    border-radius: 50%;
+    background-color: gray;
+    width: 150px;
+    height: 150px;
+    grid-column: 2/3;
 }
