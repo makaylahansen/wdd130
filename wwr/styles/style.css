@@ -72,6 +72,7 @@ nav a {
     padding: 15px 30px;
     margin-top: 50px;
     border-radius: 5px;
+    background-color: #646F4B;
 }
 
 .msg {
@@ -99,6 +100,8 @@ nav a {
 }
 
 #hero {
+    width: 100%;
+    height: 100%;
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
