@@ -108,6 +108,10 @@ nav a {
     margin-top: -100px;
 }
 
+#hero-img {
+    width: 100%;
+}
+
 #hero-box {
     grid-column: 1/4;
     grid-row: 1/3;
