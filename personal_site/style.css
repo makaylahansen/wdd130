@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Playpen+Sans:wght@300&family=Roboto+Slab&family=Skranji&display=swap');
+
+html {
+    background-color: #DFD5A5;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5B8C5A;
+    color: #CFD186;
+    text-align: center;
+    font-family: "Playpen Sans", sans-serif;
+    font-size: 20px;
+}
+
+nav a:hover {
+    background-color: #CFD186;
+    color: #52414C;
+    height: 100px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+#our-company {
+    font-family: "Playpen Sans", sans-serif;
+    text-align: center;
+    color:#52414C;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#our-company p {
+    font-family: "Oswald", sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+main img {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 0px 0px 10px #52414C;
+    background-color: #5B8C5A;
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+.hiking-button {
+    background-color: #52414C;
+    width: 150px;
+    height: 50px;
+    color: #DFD5A5;
+    font-family: "Playpen Sans", sans-serif;
+    border-radius: 10px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+.camping-button {
+    background-color: #52414C;
+    width: 150px;
+    height: 50px;
+    color: #DFD5A5;
+    font-family: "Playpen Sans", sans-serif;
+    border-radius: 10px;
+    font-size: 25px;
+    grid-column: 4/5;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hiking-button a {
+    text-decoration: none;
+    color: #DFD5A5;
+    font-family: "Playpen Sans", sans-serif;
+}
+
+.camping-button a {
+    text-decoration: none;
+    color: #DFD5A5;
+    font-family: "Playpen Sans", sans-serif;
+}
+
+.hiking-button:hover {
+    background-color: #E3655B;
+}
+
+.camping-button:hover {
+    background-color: #E3655B;
+}
+
+#more-content {
+    font-family: "Oswald", sans-serif;
+    color:#52414C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#more-content p {
+    text-align: center;
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#more-content img {
+    height: 400px;
+    grid-column: 4/6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 0px 0px 10px #52414C;
+    background-color: #5B8C5A;
+}
+
+footer {
+    background-color: #5B8C5A;
+    color: #DFD5A5;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer p a{
+    text-align: center;
+    text-decoration: none;
+    color:#DFD5A5;
+}
+
+footer p a:hover {
+    text-align: center;
+    text-decoration: underline;
+    color:#E3655B;
+}
