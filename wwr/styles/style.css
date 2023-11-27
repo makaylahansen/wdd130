@@ -201,6 +201,7 @@ nav a {
 }
 
 .rivers-info p {
+    margin-top: 100px;
     grid-column: 2/3;
     grid-row: 1/3;
     text-align: center;
