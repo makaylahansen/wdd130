@@ -3,43 +3,101 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
         <title>Hiking | Perfect Pack</title>
+        <style>
+            .container {
+              position: relative;
+              width: 50%;
+            }
+            
+            .image {
+              opacity: 1;
+              display: block;
+              width: 150%;
+              height: auto;
+              transition: .5s ease;
+              backface-visibility: hidden;
+              border-style: solid;
+              border-color: #5B8C5A;
+            }
+            
+            .middle {
+              transition: .5s ease;
+              opacity: 0;
+              position: absolute;
+              top: 50%;
+              left: 75%;
+              transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+              text-align: center;
+            }
+            
+            .container:hover .image {
+              opacity: 0.3;
+            }
+            
+            .container:hover .middle {
+              opacity: 1;
+            }
+            
+            .text {
+              background-color: #5B8C5A;
+              color: #CFD186;
+              font-size: 16px;
+              padding: 16px 32px;
+              border-radius: 10px;
+            }
+            </style>
     </head>
     <body>
         <nav>
-            <img src="personalsite_logo.jpg" alt="Image of logo" width="100px">
+            <img src="logo.png" alt="Image of logo">
             <a href="index.html">Home</a>
             <a href="hiking.html">Hiking</a>
             <a href="camping.html">Camping</a>
             <a href="contactus.html">Contact Us</a>
+            <img src="logo.png" alt="Image of logo">
         </nav>
-        <section id="hiking-content">
+        <div class="hiking-content">
             <h2>Hiking</h2>
             <p>A huge part of camping is the enjoyment of the outdoors. On of the best ways to enjoy the beautiful nature around you is by hiking. However, finding the perfect hike for you and/or your family can be challenging. Often you find that everyone has different wants or needs that are hard to meet. Using the Perfect Pack, we can help find hikes that meet those needs! Whether you want a small 1-hour hike with a great view, or a full day hike with rough terrain. No matter the level you are at, we can help you find the ideal hike to make your trip worth all the hype.</p>
-        </section>
+        </div>
         <main class="hiking-main">
-            <img src="images/aj.JPG" alt="image of river in a hiking spot" width="500px">
+            <div class="container">
+                <img src="images/aj.JPG" alt="image of river in a hiking spot" class="image">
+                <div class="middle">
+                    <div class="text">Willard Canyon</div>
+                </div>
+            </div>
             <p>Here at Willard, there is a wide variety of fun nearby hikes. The Willard Waterfall hike is a great medium difficult to hard hike. On the hike, there is a small waterfall that can be seen at the completion of the trail. However, the closer you get to the waterfall, the harder the hike gets. If you want a more medium trail, you can follow that path all the way to a small bridge. There you will see a small waterfall and stream. Be warned, the main waterfall can only be seen during its prime time. The best time to experience the full beauty if the hike is in the late Spring, right when the snow runoff starts to come. This hike tends to be best suited for teenagers and adults. The trail is steep and sheer in some places. This makes it harder for young kids who are less experienced.</p>
         </main>
-        <section id="hiking-content-two">
+        <div class="hiking-content-two">
             <p>Bryce Canyon also has a wide variety of hikes ranging from all levels. For those with younger kids who struggle to hike, you can stay on the man board walk that is at the top of the canyon. For those who have more experience, there are many hikes that lead down to the bottom of the canyon. From there, you can choose from the many options. Be warned! What comes down must go up! Make sure to also check on any updates on flash floods, otherwise your trip will be done in, well, a flash!</p>
-            <img src="images/bryce.JPG" alt="image of bryce canyon" width="500px">
-        </section>
-    </body>
-    <footer>
-        <p>Perfect Pack &copy; 2023 - Makayla Hansen</p>
-            <p><a href="site-plan.html">Site Plan</a></p>
-            <p><a href="contactus.html">Contact Us</a></p>
-        <div class="social">
-            <a href="https://facebook.com" target="_blank">
-                <img src="images/facebook.png" alt="fb icon">
-            </a>
-            <a href="https://twitter.com" target="_blank">
-                <img src="images/twitter.png" alt="twitter icon">
-            </a>
-            <a href="https://instagram.com" target="_blank">
-                <img src="images/instagram.png" alt="instagram icon">
-            </a>
+            <div class="second-hover">
+                <div class="container">
+                    <img src="images/bryce.JPG" alt="image of bryce canyon" class="image">
+                    <div class="middle">
+                        <div class="text">Bryce Canyon</div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>
+        <footer>
+            <p>Perfect Pack &copy; 2023 - Makayla Hansen</p>
+                <p><a href="site-plan.html">Site Plan</a></p>
+                <p><a href="contactus.html">Contact Us</a></p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </footer>
+    </body>
 </html>
