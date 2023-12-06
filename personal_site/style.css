@@ -217,6 +217,7 @@ nav img {
 
 .first-image {
     grid-column: 2/4;
+    width: 500px;
     padding: 10px;
     box-shadow: 0px 0px 10px #52414C;
     background-color: #5B8C5A;
@@ -286,7 +287,6 @@ footer p a:hover {
     }
     .more-content img{
         margin-left: 0;
-    }
     }
     footer {
         margin-top: 25px;
