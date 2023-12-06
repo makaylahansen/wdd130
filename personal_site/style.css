@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Playpen+Sans:wght@300&family=Roboto+Slab&family=Skranji&display=swap');
+#content {
+    max-width: 1600px;
+    display: block;
+    margin: 0 auto;
+}
 
 html {
     background-color: #DFD5A5;
