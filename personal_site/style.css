@@ -364,6 +364,12 @@ footer p a:hover {
         display: block;
         height: auto;
     }
+
+    .hiking-button .camping-button {
+        display: block;
+        height: auto;
+    }
+
     nav, footer {
         flex-direction: column;
     }
