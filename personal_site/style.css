@@ -360,14 +360,19 @@ footer p a:hover {
 }
 
 @media screen and (max-width: 1000px) {
-    main .hiking-main .campling-main {
+    main .hiking-main .camping-main {
         display: block;
         height: auto;
     }
 
-    .hiking-button .camping-button {
+    main {
         display: block;
-        height: auto;
+        margin: auto 0;
+    }
+
+    .camping-main {
+        display: block;
+        margin: auto 0;
     }
 
     nav, footer {
