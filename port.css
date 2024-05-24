@@ -1,5 +1,5 @@
 html {
-    background-color: #F2D0A9;
+    background-color: #F1E3D3;
 }
 
 h2 {
@@ -11,7 +11,7 @@ nav {
     justify-content: center;
     align-items: center;
     background-color: #4a3b76;
-    color: #F2D0A9;
+    color: #F1E3D3;
     text-align: center;
     font-family: "Playpen Sans", sans-serif;
     font-size: 20px;
@@ -23,7 +23,7 @@ nav a:hover {
 }
 
 nav a {
-    color: #F2D0A9;
+    color: #F1E3D3;
     display: block;
     margin: 0 auto;
     text-decoration: none;
