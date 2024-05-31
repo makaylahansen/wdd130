@@ -1,39 +1,62 @@
 html {
     background-color: #F1E3D3;
+    margin: 5%;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 h2 {
-    color: #4a3b76;
-    text-align: center;
+    font-family: "Maven Pro";
+    font-size: 35px;
 }
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #4a3b76;
-    color: #F1E3D3;
-    text-align: center;
-    font-family: "Playpen Sans", sans-serif;
+
+h3 {
+    font-family: Lato;
     font-size: 20px;
 }
 
-nav a:hover {
-    background-color: #D88C9A;
-    color: #4a3b76;
+h4 {
+    font-family: Lato;
+    font-size: 15px;
 }
 
-nav a {
-    color: #F1E3D3;
-    display: block;
-    margin: 0 auto;
-    text-decoration: none;
-    height: 100px;
-    width: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.intro {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+    width: 100%;
 }
 
 .home {
-    width: 500px;
+    grid-column: 2/4;
+    grid-row: 1/4;
+    width: 100%;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
