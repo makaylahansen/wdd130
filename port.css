@@ -90,3 +90,14 @@ nav li {
     margin-bottom: 10px;
 }
 
+.sub-pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5B8C5A;
+    color: #CFD186;
+    text-align: center;
+    font-family: "Playpen Sans", sans-serif;
+    font-size: 20px;
+}
+
