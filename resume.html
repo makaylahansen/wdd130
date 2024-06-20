@@ -2,32 +2,175 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makayla Hansen Resume</title>
+    <link rel="stylesheet" href="https://themes.googleusercontent.com/fonts/css?kit=RFda8w1V0eDZheqfcyQ4EGb3DKsRMD34dqg1gT8Z-p6isjtAVhoKeKPV_uAAgBOSk3k702ZOKiLJc3WVjuplzPesZW2xOQ-xsNqO47m55DA">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+        /* styles.css */
+
+        /* Reset default margin and padding for all elements */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Set background color for the entire page */
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Center the content */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header styling */
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .header p {
+            font-size: 14px;
+            color: #777;
+        }
+
+        /* Section titles */
+        .section-title {
+            background-color: #f5f5f5;
+            padding: 10px 15px;
+            font-weight: bold;
+        }
+
+        /* Section content */
+        .section-content {
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        /* List items */
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Responsive design */
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+        }
+
     </style>
-    <link href="port.css" rel="stylesheet">
-    <title>Contact Me</title>
 </head>
 <body>
-    <header>
-        <div class="intro">
-            <h2>Makayla Hansen</h2>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+    <table>
+        <tr>
+            <td colspan="2" class="title">
+                <h1>Makayla Hansen</h1>
+            </td>
+        </tr>
+        <tr>
+            <td class="contact-info">
+                <p>Makayla Hansen</p>
+                <p>650 S. 1st W. #1409</p>
+                <p>Rexburg, ID 83460</p>
+                <p>(435) 237-3530</p>
+                <p>makaylahansen04@gmail.com</p>
+            </td>
+        </tr>
+    </table>
+
+    <section class="experience">
+        <h2 class="section-header">WORK EXPERIENCE</h2>
+        <hr>
+        <div class="content">
+            <h2>Eagle Mountain Golf Course, Brigham City, UT</h2>
+            <h3>Cart Kid</h3>
+            <h3>JULY 2020 - AUGUST 2023</h3>
+            <p>In charge of maintaining and cleaning all golf carts. Clean bathrooms and windows, weed, and attend to any needs in the Pro Shop.</p>
+
+            <h3>Junior League Teacher</h3>
+            <h3>JUNE 2021 - JULY 2023</h3>
+            <p>Teach the fundamental skills of golf to 80 children over the course of 6 weeks. In charge of both their learning and safety.</p>
+            
+            <h2>BYU-Idaho, Rexburg, ID</h2>
+            <h3>Online Copy Editor</h3>
+            <h3>APRIL 2024 - CURRENT</h3>
+            <p>Worked with a team of editors to meet ADA compliance, BYU-Idaho Style Guidelines, and make level one edits to ensure all BYU-Idaho Online Courses and World Wide Courses met the proper standards.</p>
+        </div>
+    </section>
+
+    <section class="volunteer">
+        <h2 class="section-header">VOLUNTEER EXPERIENCE</h2>
+        <hr>
+        <div class="content">
+            <h3>Key Club</h3>
+        </div>
+    </section>
+
+    <section class="leadership">
+        <h2 class="section-header">LEADERSHIP EXPERIENCE</h2>
+        <hr>
+        <div class="content">
+            <h3>Vice President of FBLA — Specializing in Activities, One Year</h3>
+            <h3>President of Key Club — Two Years</h3>
+        </div>
+    </section>
+
+    <section class="education">
+        <h2 class="section-header">EDUCATION</h2>
+        <hr>
+        <div class="content">
+            <h3>High School Diploma</h3>
+            <p>Box Elder High School 2019-2023</p>
+
             <h3>Software Engineering</h3>
-            <h4>Emphases in Full Stack Web Development</h4>
-            <p>Makayla Hansen is a student at BYU-Idaho. She is currently studying Software Engineering with an emphasis in Full Stack Web Development. She is hard working and understands the importance of feedback and constructive criticism. In her free time, Makayla loves to read, play the piano, sing, and spend time outdoors.
-            </p>
+            <p>Brigham Young University Idaho 2023-current</p>
         </div>
-        <nav>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="cert.html">Certifications</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-        </nav>
-        <div class="home_image">
-            <img src="portfolio.jpg" alt="image of Makayla Hansen">
+    </section>
+
+    <section class="awards">
+        <h2 class="section-header">AWARDS AND HONORS</h2>
+        <hr>
+        <div class="content">
+            <ul>
+                <li>Sterling Scholar Runner Up in Computer Technology</li>
+                <li>AWS Certified Cloud Practitioner</li>
+                <li>Certified in Microsoft Technology Associate for Introduction to Programming using HTML and CSS</li>
+                <li>Career and Technical Education Pathway Completer:
+                    <ul>
+                        <li>Information Technology Systems</li>
+                        <li>Web Development</li>
+                    </ul>
+                </li>
+            </ul>
         </div>
-    </header>
+    </section>
+
 </body>
 </html>
