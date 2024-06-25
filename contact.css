@@ -13,14 +13,8 @@ body {
     justify-content: center;
     background-color: white;
     width: 1000px;
-    box-shadow: 10px 10px #002645;
 }
 
-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
 
 h2 {
     font-family: "Maven Pro";
@@ -40,29 +34,13 @@ h4 {
     color:#002645;
 }
 
-p {
-    padding: 15px;
-}
 
 .intro {
-    grid-column: 1/2;
-    grid-row: 1/2;
     text-align: center;
     width: 100%;
 }
 
-img {
-    margin: 5px;
-    width: 400px;
-}
-
-.home_image {
-    grid-column: 2/4;
-    grid-row: 1/4;
-    width: 100%;
-}
-
-a {
+nav a {
     text-decoration: none;
     color: white;
     background-color: #002645;
@@ -79,7 +57,7 @@ nav {
     justify-content: center;
 }
 
-nav ul {
+nav {
     list-style-type: none;
     padding: 0;
 }
@@ -90,15 +68,4 @@ nav li {
     font-size: 18px;
     color: #333;
     margin-bottom: 10px;
-}
-
-.sub-pages {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #5B8C5A;
-    color: #CFD186;
-    text-align: center;
-    font-family: "Playpen Sans", sans-serif;
-    font-size: 20px;
 }

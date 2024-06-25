@@ -1,75 +1,96 @@
-body {
-    font-family: Lato;
-    margin: 5%;
+html {
     background-color: #DCE2BD;
+    margin: 5%;
     display: flex;
     justify-content: center;
     justify-items: center;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Lato, sans-serif;
+    margin: 5%;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+}
+
+main {
+    width: 100%;
+    max-width: 1000px;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 a {
     text-decoration: none;
     color: white;
     background-color: #002645;
-    font-family: "Maven Pro";
+    font-family: "Maven Pro", sans-serif;
     font-size: 20px;
     height: 25px;
     width: 200px;
     text-align: center;
     margin: 5px;
+    line-height: 25px; /* Adjusted to center text vertically */
 }
 
-.sub-pages {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centers the nav vertically */
-    align-items: center; /* Centers the nav horizontally */
+.intro h1{
+    text-align: center;
+    width: 100%;
+    font-family: "Maven Pro";
+    font-size: 35px;
+    color:#002645;
 }
 
-.sub-pages ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.sub-pages li {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.sub-pages {
+nav {
     display: flex;
     justify-content: center;
-    align-items: center;
-    color: #CFD186;
-    text-align: center;
-    font-family: "Playpen Sans", sans-serif;
+    flex-wrap: wrap; /* Allows wrapping if there are many links */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    background-color: #002645;
+    font-family: "Maven Pro", sans-serif;
     font-size: 20px;
+    height: 25px;
+    width: 200px;
+    text-align: center;
+    margin: 5px;
+    line-height: 25px; /* Adjusted to center text vertically */
 }
 
 table {
-    grid-row: 2/2;
     width: 100%;
     border-collapse: collapse;
     background-color: white;
-    max-width: 1000px;
+    margin-top: 20px;
 }
 
 td {
     vertical-align: top;
-    padding: 5%;
+    padding: 20px;
 }
 
 h1 {
-    font-family: "Maven Pro";
+    font-family: "Maven Pro", sans-serif;
     font-size: 40px;
     color: #333;
 }
 
 h2 {
-    font-family: "Maven Pro";
+    font-family: "Maven Pro", sans-serif;
     font-size: 24px;
     color: #4c5a9a;
     border-bottom: 2px solid #4c5a9a;
