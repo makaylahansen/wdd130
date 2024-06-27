@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 html {
     background-color: #DCE2BD;
     margin: 5%;
@@ -10,7 +12,7 @@ body {
     display: flex;
     justify-content: center;
     background-color: white;
-    width: 1000px;
+    width: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,6 +31,16 @@ main {
     background-color: white;
     padding: 20px;
     box-sizing: border-box;
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+.cert {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 a {
@@ -53,6 +65,7 @@ a {
 }
 
 nav {
+    margin-bottom: 3%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap; /* Allows wrapping if there are many links */
@@ -69,6 +82,13 @@ nav a {
     text-align: center;
     margin: 5px;
     line-height: 25px; /* Adjusted to center text vertically */
+}
+
+.link {
+    background-color: white;
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 5px;
 }
 
 table {
@@ -113,9 +133,9 @@ h4 {
 }
 
 p {
-    font-size: 16px;
-    color: #333;
-    margin: 2px 0;
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 5px;
 }
 
 ul {
@@ -123,7 +143,7 @@ ul {
 }
 
 ul li {
-    font-size: 16px;
+    font-size: 20px;
     color: #555;
     margin-bottom: 5px;
 }
@@ -143,7 +163,6 @@ hr {
     margin: 10px 0;
 }
 
-.contact-info p {
-    margin: 0;
-    line-height: 1.5;
+img {
+    width: 250px;
 }

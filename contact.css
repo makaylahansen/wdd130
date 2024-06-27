@@ -12,9 +12,16 @@ body {
     display: flex;
     justify-content: center;
     background-color: white;
-    width: 1000px;
+    width: 1200px;
 }
 
+.intro h1{
+    text-align: center;
+    width: 100%;
+    font-family: "Maven Pro";
+    font-size: 35px;
+    color:#002645;
+}
 
 h2 {
     font-family: "Maven Pro";
@@ -68,4 +75,8 @@ nav li {
     font-size: 18px;
     color: #333;
     margin-bottom: 10px;
+}
+
+main {
+    font-size: 30px;
 }
