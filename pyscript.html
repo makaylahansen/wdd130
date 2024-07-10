@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meal Prep Program</title>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css">
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+<body>
+    <h1>Meal Prep Program</h1>
+    <div id="meal-options"></div>
+    <div id="meal-plan"></div>
+
+    <py-script>
+        import random
+        from pyodide.ffi import to_js
+
+        MEAL_NAME_INDEX = 0
+        MEAL_TYPE_INDEX = 1
+        MEAL_PRICE_INDEX = 2
+
+        meal_prep_dict = {
+            "001": ["Chicken Alfredo", "Dinner", 11.77],
+            "002":["Tacos", "Dinner", 14.43],
+            "003":["Burger", "Dinner", 17.77],
+            "004":["Rice and Chicken", "Dinner", 10.09],
+            "005":["Chicken Nuggets", "Dinner", 6.96],
+            "006":["Spaghetti", "Dinner", 10.57],
+            "007":["Mashed Potatoes", "Dinner", 11.32],
+            "008":["Salad", "Lunch", 2.97],
+            "009":["Sandwich", "Lunch", 6.67],
+            "010":["Baked Potatoes", "Lunch", 10.24],
+            "011":["Chicken Burrito", "Lunch", 11.45],
+            "012":["Mac and Cheese", "Lunch", 1.24],
+            "013":["Lettuce Wrap", "Lunch", 13.43],
+            "014":["Pasta Salad", "Lunch", 3.94],
+            "015":["Eggs and Ham", "Breakfast", 7.37],
+            "016":["Oatmeal", "Breakfast", 3.56],
+            "017":["Yogurt", "Breakfast", 5.18],
+            "018":["Protein Shake", "Breakfast", 8.97],
+            "019":["Waffles", "Breakfast", 5.72],
+            "020":["Applesauce", "Breakfast", 3.12],
+            "021":["Bacon and Eggs", "Breakfast", 6.82]
+        }
+
+        def print_dictionary(meal_prep_dict):
+            meal_options = "Meal Options:<br>"
+            for meal_code, meal_details in meal_prep_dict.items():
+                meal_options += f"{meal_details[MEAL_NAME_INDEX]}<br>"
+            return meal_options
+
+        def make_plan(meal_prep_dict):
+            selected_breakfasts = []
+            selected_lunches = []
+            selected_dinners = []
+
+            meal_plan = "It is time to make your 2 week meal plan!<br>Exciting right?<br>Let's begin!<br><br>"
+
+            for i in range(14):
+                breakfast_options = {}
+                lunch_options = {}
+                dinner_options = {}
+
+                for meal_code, details in meal_prep_dict.items():
+                    if details[MEAL_TYPE_INDEX] == "Breakfast" and meal_code not in selected_breakfasts:
+                        breakfast_options[meal_code] = details
+                    if details[MEAL_TYPE_INDEX] == "Lunch" and meal_code not in selected_lunches:
+                        lunch_options[meal_code] = details
+                    if details[MEAL_TYPE_INDEX] == "Dinner" and meal_code not in selected_dinners:
+                        dinner_options[meal_code] = details
+
+                if breakfast_options and lunch_options and dinner_options:
+                    random_breakfast_meal_code = random.choice(list(breakfast_options.keys()))
+                    random_lunch_meal_code = random.choice(list(lunch_options.keys()))
+                    random_dinner_meal_code = random.choice(list(dinner_options.keys()))
+
+                    random_breakfast_meal = breakfast_options[random_breakfast_meal_code][MEAL_NAME_INDEX]
+                    random_lunch_meal = lunch_options[random_lunch_meal_code][MEAL_NAME_INDEX]
+                    random_dinner_meal = dinner_options[random_dinner_meal_code][MEAL_NAME_INDEX]
+
+                    selected_breakfasts.append(random_breakfast_meal_code)
+                    selected_lunches.append(random_lunch_meal_code)
+                    selected_dinners.append(random_dinner_meal_code)
+
+                    if len(selected_breakfasts) > 5:
+                        selected_breakfasts.pop(0)
+                    if len(selected_lunches) > 5:
+                        selected_lunches.pop(0)
+                    if len(selected_dinners) > 5:
+                        selected_dinners.pop(0)
+
+                    meal_plan += f"Day {i + 1}:<br>"
+                    meal_plan += f"Breakfast: {random_breakfast_meal}<br>"
+                    meal_plan += f"Lunch: {random_lunch_meal}<br>"
+                    meal_plan += f"Dinner: {random_dinner_meal}<br><br>"
+
+            return meal_plan
+
+        meal_options = print_dictionary(meal_prep_dict)
+        plan = make_plan(meal_prep_dict)
+
+        from pyodide import to_js
+        from js import document
+
+        document.getElementById("meal-options").innerHTML = meal_options
+        document.getElementById("meal-plan").innerHTML = plan
+
+    </py-script>
+</body>
+</html>
