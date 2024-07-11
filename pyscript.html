@@ -13,7 +13,6 @@
 
     <py-script>
         import random
-        from pyodide.ffi import to_js
 
         MEAL_NAME_INDEX = 0
         MEAL_TYPE_INDEX = 1
@@ -21,26 +20,26 @@
 
         meal_prep_dict = {
             "001": ["Chicken Alfredo", "Dinner", 11.77],
-            "002":["Tacos", "Dinner", 14.43],
-            "003":["Burger", "Dinner", 17.77],
-            "004":["Rice and Chicken", "Dinner", 10.09],
-            "005":["Chicken Nuggets", "Dinner", 6.96],
-            "006":["Spaghetti", "Dinner", 10.57],
-            "007":["Mashed Potatoes", "Dinner", 11.32],
-            "008":["Salad", "Lunch", 2.97],
-            "009":["Sandwich", "Lunch", 6.67],
-            "010":["Baked Potatoes", "Lunch", 10.24],
-            "011":["Chicken Burrito", "Lunch", 11.45],
-            "012":["Mac and Cheese", "Lunch", 1.24],
-            "013":["Lettuce Wrap", "Lunch", 13.43],
-            "014":["Pasta Salad", "Lunch", 3.94],
-            "015":["Eggs and Ham", "Breakfast", 7.37],
-            "016":["Oatmeal", "Breakfast", 3.56],
-            "017":["Yogurt", "Breakfast", 5.18],
-            "018":["Protein Shake", "Breakfast", 8.97],
-            "019":["Waffles", "Breakfast", 5.72],
-            "020":["Applesauce", "Breakfast", 3.12],
-            "021":["Bacon and Eggs", "Breakfast", 6.82]
+            "002": ["Tacos", "Dinner", 14.43],
+            "003": ["Burger", "Dinner", 17.77],
+            "004": ["Rice and Chicken", "Dinner", 10.09],
+            "005": ["Chicken Nuggets", "Dinner", 6.96],
+            "006": ["Spaghetti", "Dinner", 10.57],
+            "007": ["Mashed Potatoes", "Dinner", 11.32],
+            "008": ["Salad", "Lunch", 2.97],
+            "009": ["Sandwich", "Lunch", 6.67],
+            "010": ["Baked Potatoes", "Lunch", 10.24],
+            "011": ["Chicken Burrito", "Lunch", 11.45],
+            "012": ["Mac and Cheese", "Lunch", 1.24],
+            "013": ["Lettuce Wrap", "Lunch", 13.43],
+            "014": ["Pasta Salad", "Lunch", 3.94],
+            "015": ["Eggs and Ham", "Breakfast", 7.37],
+            "016": ["Oatmeal", "Breakfast", 3.56],
+            "017": ["Yogurt", "Breakfast", 5.18],
+            "018": ["Protein Shake", "Breakfast", 8.97],
+            "019": ["Waffles", "Breakfast", 5.72],
+            "020": ["Applesauce", "Breakfast", 3.12],
+            "021": ["Bacon and Eggs", "Breakfast", 6.82]
         }
 
         def print_dictionary(meal_prep_dict):
@@ -99,11 +98,10 @@
         meal_options = print_dictionary(meal_prep_dict)
         plan = make_plan(meal_prep_dict)
 
-        from pyodide import to_js
-        from js import document
+        import js
 
-        document.getElementById("meal-options").innerHTML = meal_options
-        document.getElementById("meal-plan").innerHTML = plan
+        js.document.getElementById("meal-options").innerHTML = meal_options
+        js.document.getElementById("meal-plan").innerHTML = plan
 
     </py-script>
 </body>
