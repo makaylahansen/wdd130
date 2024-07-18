@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="resume.css" rel="stylesheet">
+    <script src="port.js" defer></script>
+    <link rel="stylesheet" href="./resume.css">
     <title>Projects</title>
-    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
 </head>
 <body>
     <header>
@@ -17,16 +17,31 @@
         <nav>
             <a href="index.html">Home</a>
             <a href="projects.html">Projects</a>
-            <a href="cert.html">Certifications</a>
             <a href="resume.html">Resume</a>
-            <a href="contact.html">Contact Me</a>
         </nav>
     </header>
     <main>
-        <div class="meal-prep">
-            <p>Meal Prep Program</p>
-
-        </div>
+        <p>Click on the project to see the possible output!</p> 
+        <p>Note: Some projects include user input that could have a different outcome.</p>
+        <section class="project">
+            <div class="wordle">
+                <h3>Wordle Project</h3>
+                <img id="wordle_img" src="proimg/wordle.png" alt="image of wordle project code.">
+            </div>
+            <div class="meal_prep">
+                <h3>Meal Prep Project</h3>
+                <img id="meal_prep_img" src="proimg/meal_prep.png" alt="image of meal prep project code.">
+            </div>
+            <div class="bash">
+                <h3>Bash Project</h3>
+                <img id="bash_img" src="proimg/bash.png" alt="image of bash project code.">
+            </div>
+        </section>
     </main>
+    <hr>
+    <footer>
+        <a class="linkedin" href="https://www.linkedin.com/in/makayla-hansen-86563a297/">LinkedIn</a>
+        <p class="email">Email: makaylahansen04@gmail.com</p>
+    </footer>
 </body>
 </html>
